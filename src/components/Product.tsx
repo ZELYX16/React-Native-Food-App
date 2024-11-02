@@ -1,10 +1,6 @@
 import { StyleSheet,View, Text,Image } from 'react-native'
 import React from 'react'
 import { Producttypes } from '../types';
-
-const types = {
-    
-}
 const Product = ({ product }: {product: Producttypes}) => {
   return (
       <View style={styles.container}>
@@ -23,7 +19,8 @@ const styles = StyleSheet.create({
         padding: 10,
         borderColor: 'lightgray',
         borderRadius: 10,
-        margin:5
+        margin: 5,
+        flex:1
     },
     image: {
         width: '100%',
